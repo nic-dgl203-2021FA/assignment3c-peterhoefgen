@@ -11,123 +11,162 @@
 </head>
 
 <body>
-<div class="container">
-  <!--
+  <div class="container">
+    <!--
   This section contains the navbar for the entire document
 -->
-  <div id="navbar">
+    <div id="navbar">
 
-  </div>
+    </div>
 
-  <!--
+    <!--
   This is the hero section for the document containing my name, bio, and image.
   Also a call to action button with a modal.
 -->
 
-  <header class="jumbotron jumbotron-fluid">
+    <header class="jumbotron jumbotron-fluid">
 
-<div class="display-4">Peter Hoefgen</div>
-<p>Freelance writer, graphic designer and coder.</p>
+      <div class="display-4">Peter Hoefgen</div>
+      <p>Freelance writer, graphic designer and coder.</p>
 
 
-  </header>
+    </header>
 
-  <!--
+    <!--
   This section contains my portfoli with a carousel of portfolio pieces.
 -->
 
-  <div id="portfolio">
+    <div id="portfolio">
 
-  </div>
+    </div>
 
-  <!--
+    <!--
   This section contains css animation that was done over DGL 203 - Advanced CSS
 -->
 
-  <div id="animation">
+    <div id="animation">
 
-  </div>
+    </div>
 
-  <!--
+    <!--
   This  contains the skills section detailing all the skills that I believe I have.
 -->
 
-  <div id="skills">
+    <div id="skills">
 
-<h2>Skills</h2>
+      <h2>Skills</h2>
 
-<h3>Graphic Design</h3>
-<ul>
-  <li>Product Design</li>
-  <li>Print Design</li>
-  <li>Branding</li>
-  <li>Website Design</li>
-</ul>
+      <h3>Graphic Design</h3>
+      <ul>
+        <li>Product Design</li>
+        <li>Print Design</li>
+        <li>Branding</li>
+        <li>Website Design</li>
+      </ul>
 
-<h3>Coding Experience</h3>
-<ul>
-  <li>Java</li>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-</ul>
+      <h3>Coding Experience</h3>
+      <ul>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
 
-<h3>Business Management</h3>
-<ul>
-  <li>International Marketing</li>
-  <li>Social Media Marketing</li>
-  <li>Human Resource Management</li>
-  <li>Ad Copy</li>
-</ul>
+      <h3>Business Management</h3>
+      <ul>
+        <li>International Marketing</li>
+        <li>Social Media Marketing</li>
+        <li>Human Resource Management</li>
+        <li>Ad Copy</li>
+      </ul>
 
 
-  </div>
+    </div>
 
-  <!--
+    <!--
   This contains the education section with my educational background.
 -->
 
-  <div id="education">
-    <h2>Education</h2>
+    <div id="education">
+      <h2>Education</h2>
 
-    <h3>Advanced Digital Design and Development Diploma</h3>
-    <h4>North Island College, Courtenay BC</h4>
-    <h4>2020 - 2022</h4>
+      <div class="accordion" id="educationAccordion">
+        <div class="card">
+          <div class="card-header" id="digitalDesign">
+            <h2 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#digitalDesignInfo">Advanced Digital
+                Design and Development Diploma</button>
+            </h2>
+          </div>
+          <!--end of digital design card-header-->
+          <div id="digitalDesignInfo" class="collapse show" aria-labelledby="digitalDesign"
+            data-parent="#educationAccordion">
+            <div class="card-body">
+              <div class="h5">North Island College, Courtenay BC</div><br>
+              <div class="h6">2020 - 2022</div><br>
 
-    <p>Currently studying graphic and website design at North Island College. Classes include UI/UX design, product
-      design, branding, and coding.</p>
+              <p>Currently studying graphic and website design at North Island College. Classes include UI/UX design,
+                product design, branding, and coding.</p>
 
-    <h3>Post Degree Diploma in Global Business Management</h3>
-    <h4>North Island College, Courtenay BC</h4>
-    <h4>2013 - 2017</h4>
+            </div> <!-- end of digital design card-body -->
+          </div>
+        </div>
+        <!--end of #digitalDesign card-->
+        <div class="card">
+          <div class="card-header" id="businessManagement">
+            <h2 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#businessManagementInfo">Post Degree
+                Diploma in Global Business Management</button>
+            </h2>
+          </div> <!-- end of businessmanagement card-header -->
+          <div id="businessManagementInfo" class="collapse show" aria-labelledby="businessManagement"
+            data-parent="#educationAccordion">
+            <div class="card-body">
+              <div class="h5">North Island College, Courtenay BC</div>
+              <div class="h6">2013 - 2017</div>
 
-    <p>Completed the Post Degree Diploma in Global Business Management at North Island College, classes included
-      branding, marketing, international marketing, global business, human resources.</p>
+              <p>Completed the Post Degree Diploma in Global Business Management at North Island College, classes
+                included
+                branding, marketing, international marketing, global business, human resources.</p>
+            </div> <!-- end of businessmanagement card-body -->
+          </div>
+        </div> <!-- end of business management card-->
+        <div class="card">
+          <div class="card-header" id="creativeWriting">
+            <h2 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#creativeWritingInfo">Bachelor of Arts in
+                Creative Writing</button>
+            </h2>
+          </div> <!-- end of businessmanagement card-header -->
+          <div id="creativeWritingInfo" class="collapse show" aria-labelledby="creativeWriting"
+            data-parent="#educationAccordion">
+            <div class="card-body">
+              <div class="h5">Vancouver Island University, Nanaimo BC</div>
+              <div class="h6">2006 - 2010 </div>
 
-    <h3>Bachelor of Arts in Creative Writing</h3>
-    <h4>Vancouver Island University, Nanaimo BC</h4>
-    <h4>2006 - 2010</h4>
+              <p>Completed my Bachelor's Degree in creative writing with a screenwriting specialization. Classes include
+                nonfiction writing, screenwriting, and poetry. Additional classes included filmmaking, sound design, and website
+                design</p>
+            </div> <!-- end of businessmanagement card-body -->
+          </div>
+        </div> <!-- end of business management card-->
 
-    <p>Completed my Bachelor's Degree in creative writing with a screenwriting specialization. Classes include
-      nonfiction writing, screenwriting, and poetry. Additional classes included filmmaking, sound design, and website
-      design</p>
+      </div>
+      <!--End of accordion-->
 
-  </div>
-  </div><!-- collapse -->
-  </div><!-- card -->
-  </div><!-- servicesaccordion-->
-  </div>
-  </div>
+    </div>
 
-  <!--
+
+    <!--
   This section contains the footer with social media links.
 -->
 
-  <div id="footer">
+    <div id="footer">
+
+    </div>
 
   </div>
-
-</div> <!--container -->
+  <!--container -->
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
