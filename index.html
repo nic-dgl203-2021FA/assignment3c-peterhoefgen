@@ -39,12 +39,36 @@
     <header id="head" class="jumbotron">
 
       <div class="row">
-        <div class="col-md-8">
-          <div class="display-4 mb-4">Peter Hoefgen</div>
+        <div class="col-md-8 m-auto">
+          <div class="display-3 mb-2">Peter Hoefgen</div>
           <p>Freelance writer, graphic designer and coder.</p>
+
+          <!-- this button sets up the contact modal below-->
+
+          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contactModal">Click to
+            Contact</button>
+
+          <!-- This modal allows others to contact me through email-->
+
+          <div class="modal fade" id="contactModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  Feel free to contact me.
+                </div> <!-- modal-header -->
+                <div class="modal-body">
+                  Feel free to contact me, leave your email and short message below.
+                </div><!-- modal-body -->
+                <div class="modal-footer">
+
+                </div><!--Modal-footer-->
+              </div><!-- modal-content -->
+            </div> <!-- modal-dialog-->
+          </div> <!-- modal -->
+
         </div><!-- col-md-4"-->
         <div class="col-md-4">
-         <img class="img-fluid w-50" src="images/me.jpg">
+          <img class="img-fluid w-50 rounded" src="images/me.jpg">
         </div><!-- col-md-4"-->
       </div> <!-- row-->
 
