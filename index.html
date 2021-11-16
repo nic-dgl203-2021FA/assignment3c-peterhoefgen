@@ -10,7 +10,19 @@
   <title>Peter Hoefgen - Resume</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-site" data-offset="80">
+
+  <nav id="navbar-site" class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#animation">Animation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+      </div><!-- navbar-nav -->
+    </ul><!-- container -->
+  </nav>
+
   <div class="container">
     <!--
   This section contains the navbar for the entire document
@@ -24,7 +36,7 @@
   Also a call to action button with a modal.
 -->
 
-    <header class="jumbotron">
+    <header id="head" class="jumbotron">
 
       <div class="display-4 mb-4">Peter Hoefgen</div>
       <p>Freelance writer, graphic designer and coder.</p>
@@ -213,6 +225,30 @@
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  <!-- this jQuery code make the targetting sections easier and show up properly on the site.-->
+<script>
+  $(function() {
+  var topoffset = 70; //variable for menu height
+
+  //Use smooth scrolling when clicking on navigation
+  $('.navbar-nav a').click(function() {
+    if (location.pathname.replace(/^\//,'') === 
+      this.pathname.replace(/^\//,'') && 
+      location.hostname === this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-topoffset
+        }, 500);
+        return false;
+      } //target.length
+    } //click function
+  }); //smooth scrolling
+
+});
+</script>
 </body>
 
 </html>
