@@ -19,7 +19,7 @@
         <li class="nav-item"><a class="nav-link" href="#animation">Animation</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
         <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-      </div><!-- navbar-nav -->
+    </div><!-- navbar-nav -->
     </ul><!-- container -->
   </nav>
 
@@ -87,7 +87,7 @@
 -->
 
     <div id="animation">
-
+      <div class="display-4">Animation</div>
     </div>
 
     <!--
@@ -227,28 +227,28 @@
   <script src="js/bootstrap.min.js"></script>
 
   <!-- this jQuery code make the targetting sections easier and show up properly on the site.-->
-<script>
-  $(function() {
-  var topoffset = 70; //variable for menu height
+  <script>
+    $(function () {
+      var topoffset = 70; //variable for menu height
 
-  //Use smooth scrolling when clicking on navigation
-  $('.navbar-nav a').click(function() {
-    if (location.pathname.replace(/^\//,'') === 
-      this.pathname.replace(/^\//,'') && 
-      location.hostname === this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top-topoffset
-        }, 500);
-        return false;
-      } //target.length
-    } //click function
-  }); //smooth scrolling
+      //Use smooth scrolling when clicking on navigation
+      $('.navbar-nav a').click(function () {
+        if (location.pathname.replace(/^\//, '') ===
+          this.pathname.replace(/^\//, '') &&
+          location.hostname === this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top - topoffset
+            }, 500);
+            return false;
+          } //target.length
+        } //click function
+      }); //smooth scrolling
 
-});
-</script>
+    });
+  </script>
 </body>
 
 </html>
