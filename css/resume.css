@@ -60,3 +60,25 @@
         opacity: 0;
     }
 }
+
+/*
+    button - initial stylings for the button element
+*/
+
+.grover button {
+    background-color: blueviolet;
+    color: white;
+    height: 25%;
+    width: 50%;
+}
+
+/*
+    button - set up animation for button hover property
+*/
+
+.grover button:hover {
+    transform: scale(0.75);
+    background-color: blue;
+    border-color: thistle;
+}
+
