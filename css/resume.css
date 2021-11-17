@@ -1,0 +1,62 @@
+#bodyResume {
+    background-color: #dcdcdc;
+}
+
+#resume {
+    background-color: #fff;
+}
+
+*
+    set up #square for animating on an offset-path
+*/
+
+#square {
+    offset-path: path('M22.3,265,121,215l88,63.6,65-44.3,79,44.3');
+    animation: shift 8.5s linear both; 
+}
+
+/*
+    set up keyframes for the animation on path
+*/
+
+@keyframes shift {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+/*
+    SVG Rectangle Animation
+*/
+
+/*
+    This sets up the fade out animation for the inner rectangle
+*/
+
+#innerRect {
+    animation: fadeOut 8s both;
+}
+
+/*
+    Reversing the fadeOut animation for the outer rectangle so it fades in.
+*/
+
+#outerRect {
+    animation: fadeOut 4s 4s reverse both;
+}
+
+/*
+    Push keyframe set up to show inner rectangle fade out
+*/
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
