@@ -61,24 +61,23 @@
     }
 }
 
-/*
-    button - initial stylings for the button element
-*/
+h3 {
+    color: #15317e;
+    font-family: courier, sans-serif;
+    font-size: 1.2em;
+    animation-name: scale;
+    animation-duration: 3s;
 
-.grover button {
-    background-color: blueviolet;
-    color: white;
-    height: 25%;
-    width: 50%;
 }
 
 /*
-    button - set up animation for button hover property
+    h3 - the keyframes below allow the h2 animation to grow and then reset to show
+    a bounce effect.
 */
 
-.grover button:hover {
-    transform: scale(0.75);
-    background-color: blue;
-    border-color: thistle;
+@keyframes scale {
+    0% {transform: scale(0.5);}
+    85% {transform: scale(1.5);}
+    100% {transform: scale(1);}
 }
 
